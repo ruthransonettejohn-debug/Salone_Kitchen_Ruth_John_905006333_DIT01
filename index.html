@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALONE KITCHEN - Home</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+    body { background-color: #f8fafc; color: #1f2937; line-height: 1.6; padding-top: 85px; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 20px; }
+    header { position: fixed; top: 0; left: 0; right: 0; height: 75px; background-color: #111827; color: #ffffff; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .brand-logo { font-size: 1.3rem; font-weight: 800; letter-spacing: 1.5px; color: #ffffff; }
+    .nav-links { display: flex; gap: 12px; align-items: center; list-style: none; }
+    .nav-links a { font-size: 0.85rem; font-weight: 600; padding: 8px 14px; border-radius: 4px; color: #d1d5db; text-transform: uppercase; }
+    .nav-links a:hover, .nav-links a.active { color: #ffffff; background-color: #059669; }
+    .section-banner { background: #f3f4f6; color: #111827; border: 1px solid #e5e7eb; padding: 14px 20px; margin: 25px 0 18px 0; border-radius: 6px; font-size: 1.05rem; font-weight: 700; text-transform: uppercase; }
+    .section-banner.dark { background: #111827; color: #ffffff; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 20px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 20px; align-items: center; }
+    .card { background-color: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #e5e7eb; }
+    .img-container { width: 100%; aspect-ratio: 16/10; background: #e5e7eb; border-radius: 6px; overflow: hidden; margin-bottom: 12px; }
+    .img-container img { width: 100%; height: 100%; object-fit: cover; }
+    .btn-primary { display: inline-block; background-color: #111827; color: white; padding: 10px 22px; border-radius: 4px; font-weight: 700; font-size: 0.9rem; cursor: pointer; }
+    .btn-primary:hover { background-color: #059669; }
+    footer { background-color: #111827; color: #9ca3af; padding: 25px 5%; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; border-top: 3px solid #059669; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION INSERTED -->
+  <header>
+    <div class="brand-logo">SALONE KITCHEN</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="grid-2 card">
+      <div>
+        <h1 style="font-size: 2.1rem; margin-bottom: 12px; color: #111827;">WELCOME TO OUR WEBSITE</h1>
+        <p style="color: #6b7280; margin-bottom: 22px;">Discover authentic Sierra Leonean dishes, made fresh daily with traditional recipes and local ingredients.</p>
+        <div style="display: flex; gap: 12px;">
+          <a href="menu.html" class="btn-primary">Explore Menu</a>
+          <a href="order.html" class="btn-primary" style="background: #059669;">Place an Order</a>
+        </div>
+      </div>
+      <div class="img-container" style="margin-bottom: 0;">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Sierra Leone Jollof Rice">
+      </div>
+    </div>
+
+    <div class="section-banner">WHY CHOOSE US</div>
+    <div class="grid-3">
+      <div class="card">
+        <h4 style="margin-bottom: 6px;">Quality</h4>
+        <p style="color: #6b7280; font-size: 0.88rem;">Carefully prepared local products using pure palm oil, local spices, and fresh fish.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom: 6px;">Convenience</h4>
+        <p style="color: #6b7280; font-size: 0.88rem;">An easy way to browse, order, and get meals delivered in Freetown.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom: 6px;">Friendly Service</h4>
+        <p style="color: #6b7280; font-size: 0.88rem;">Friendly local support for every single customer.</p>
+      </div>
+    </div>
+
+    <div class="section-banner dark">READY TO GET STARTED?</div>
+    <div class="card" style="text-align: center; padding: 25px;">
+      <p style="margin-bottom: 18px; color: #6b7280;">Browse the menu or contact us for catering and takeaway details.</p>
+      <a href="menu.html" class="btn-primary">Browse Full Menu</a>
+    </div>
+
+    <div class="section-banner">POPULAR PICKS</div>
+    <div class="card"><p style="color: #6b7280;">Explore customer favourites like Cassava Leaf, Groundnut Soup, and Jollof Rice.</p></div>
+
+    <div class="section-banner">HOW IT WORKS</div>
+    <div class="card"><p style="color: #6b7280;">Browse the menu, choose your local meal, place your order, and wait for quick delivery.</p></div>
+
+    <div class="section-banner">CUSTOMER FEEDBACK</div>
+    <div class="card"><p style="color: #6b7280;">Read what customers say about our authentic taste, fresh fish, and fast service.</p></div>
+  </div>
+
+  <footer>
+    <div><strong>SALONE KITCHEN</strong> | Phone: +232 789 08456 | Email: info@salonekitchen.sl</div>
+    <div><span>Social Links</span></div>
+  </footer>
+</body>
+</html>

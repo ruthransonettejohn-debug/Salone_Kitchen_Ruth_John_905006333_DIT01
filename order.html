@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALONE KITCHEN - Order</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+    body { background-color: #f8fafc; color: #1f2937; line-height: 1.6; padding-top: 85px; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 20px; }
+    header { position: fixed; top: 0; left: 0; right: 0; height: 75px; background-color: #111827; color: #ffffff; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .brand-logo { font-size: 1.3rem; font-weight: 800; letter-spacing: 1.5px; color: #ffffff; }
+    .nav-links { display: flex; gap: 12px; align-items: center; list-style: none; }
+    .nav-links a { font-size: 0.85rem; font-weight: 600; padding: 8px 14px; border-radius: 4px; color: #d1d5db; text-transform: uppercase; }
+    .nav-links a:hover, .nav-links a.active { color: #ffffff; background-color: #059669; }
+    .section-banner { background: #f3f4f6; color: #111827; border: 1px solid #e5e7eb; padding: 14px 20px; margin: 25px 0 18px 0; border-radius: 6px; font-size: 1.05rem; font-weight: 700; text-transform: uppercase; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 20px; }
+    .card { background-color: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #e5e7eb; }
+    .form-group { margin-bottom: 15px; }
+    .form-group label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.85rem; }
+    .form-control { width: 100%; padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 4px; font-size: 0.95rem; background-color: #f9fafb; }
+    textarea.form-control { min-height: 100px; resize: vertical; }
+    .btn-primary { display: inline-block; background-color: #111827; color: white; padding: 10px 22px; border-radius: 4px; font-weight: 700; font-size: 0.9rem; cursor: pointer; border: none; }
+    .btn-primary:hover { background-color: #059669; }
+    footer { background-color: #111827; color: #9ca3af; padding: 25px 5%; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; border-top: 3px solid #059669; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION INSERTED -->
+  <header>
+    <div class="brand-logo">SALONE KITCHEN</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="order.html" class="active">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section-banner">PLACE YOUR ORDER</div>
+    <p style="color: #6b7280; margin-bottom: 20px;">Complete the form below. Required fields are marked with an asterisk (*).</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3 style="margin-bottom: 15px;">ORDER DETAILS</h3>
+        <form onsubmit="event.preventDefault(); alert('Order placed successfully!');">
+          <div class="form-group">
+            <label>Customer name *</label>
+            <input type="text" class="form-control" placeholder="Enter full name" required>
+          </div>
+          <div class="form-group">
+            <label>Phone number *</label>
+            <input type="tel" class="form-control" placeholder="+232 XX XXXXXX" required>
+          </div>
+          <div class="form-group">
+            <label>Email address</label>
+            <input type="email" class="form-control" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label>Choose selection *</label>
+            <select class="form-control" required>
+              <option value="">Select local meal...</option>
+              <option value="Pizza">Pizza - Le 45,000</option>
+              <option value="jollof">Salone Jollof Rice - Le 40,000</option>
+              <option value="Vegetables">vegetable Salad - Le 45,000</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Quantity *</label>
+            <input type="number" class="form-control" value="1" min="1" required>
+          </div>
+          <div class="form-group">
+            <label>Delivery address</label>
+            <input type="text" class="form-control" placeholder="Address in Freetown" required>
+          </div>
+          <div class="form-group">
+            <label>Additional instructions</label>
+            <textarea class="form-control" placeholder="Special food requests..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%;">Submit Order</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom: 18px;">
+          <h3 style="margin-bottom: 15px;">ORDER SUMMARY</h3>
+          <p style="margin-bottom: 8px;">Cassava Leaf Stew x 1 <span style="float: right;">Le 45,000</span></p>
+          <p style="margin-bottom: 8px;">Delivery Fee <span style="float: right;">Le 5,000</span></p>
+          <hr style="margin: 12px 0; border: 0; border-top: 1px solid #e5e7eb;">
+          <p style="font-weight: 700; font-size: 1.05rem;">TOTAL: <span style="float: right; color: #d97706;">Le 50,000</span></p>
+        </div>
+
+        <div class="card" style="background: #f9fafb;">
+          <p style="font-size: 0.88rem; color: #6b7280; margin-bottom: 10px;">Questions about an order? Contact us.</p>
+          <a href="contact.html" class="btn-primary" style="padding: 6px 12px; font-size: 0.8rem;">Contact Support</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-banner">STEP 1: CHOOSE YOUR MEAL</div>
+    <div class="card"><p style="color: #6b7280;">Select from our menu options and customize quantities.</p></div>
+
+    <div class="section-banner">STEP 2: ADD DELIVERY DETAILS</div>
+    <div class="card"><p style="color: #6b7280;">Enter your contact number and delivery instructions.</p></div>
+
+    <div class="section-banner">STEP 3: CONFIRM YOUR ORDER</div>
+    <div class="card"><p style="color: #6b7280;">Check the items and then submit your order request.</p></div>
+  </div>
+
+  <footer>
+    <div><strong>SALONE KITCHEN</strong> | Phone: +232 789 08456 | Email: info@salonekitchen.sl</div>
+    <div><span>Social Links</span></div>
+  </footer>
+</body>
+</html>

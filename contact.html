@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALONE KITCHEN - Contact</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+    body { background-color: #f8fafc; color: #1f2937; line-height: 1.6; padding-top: 85px; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 20px; }
+    header { position: fixed; top: 0; left: 0; right: 0; height: 75px; background-color: #111827; color: #ffffff; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .brand-logo { font-size: 1.3rem; font-weight: 800; letter-spacing: 1.5px; color: #ffffff; }
+    .nav-links { display: flex; gap: 12px; align-items: center; list-style: none; }
+    .nav-links a { font-size: 0.85rem; font-weight: 600; padding: 8px 14px; border-radius: 4px; color: #d1d5db; text-transform: uppercase; }
+    .nav-links a:hover, .nav-links a.active { color: #ffffff; background-color: #059669; }
+    .section-banner { background: #f3f4f6; color: #111827; border: 1px solid #e5e7eb; padding: 14px 20px; margin: 25px 0 18px 0; border-radius: 6px; font-size: 1.05rem; font-weight: 700; text-transform: uppercase; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 20px; }
+    .card { background-color: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #e5e7eb; }
+    .form-group { margin-bottom: 15px; }
+    .form-group label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.85rem; }
+    .form-control { width: 100%; padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 4px; font-size: 0.95rem; background-color: #f9fafb; }
+    textarea.form-control { min-height: 100px; resize: vertical; }
+    .btn-primary { display: inline-block; background-color: #111827; color: white; padding: 10px 22px; border-radius: 4px; font-weight: 700; font-size: 0.9rem; cursor: pointer; border: none; }
+    .btn-primary:hover { background-color: #059669; }
+    footer { background-color: #111827; color: #9ca3af; padding: 25px 5%; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; border-top: 3px solid #059669; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION INSERTED -->
+  <header>
+    <div class="brand-logo">SALONE KITCHEN</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section-banner">CONTACT US</div>
+    <p style="color: #6b7280; margin-bottom: 20px;">Send us a message or use the details below to reach our team.</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3 style="margin-bottom: 15px;">SEND A MESSAGE</h3>
+        <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+          <div class="form-group">
+            <label>Your name *</label>
+            <input type="text" class="form-control" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label>Email address *</label>
+            <input type="email" class="form-control" placeholder="name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" class="form-control" placeholder="Inquiry subject">
+          </div>
+          <div class="form-group">
+            <label>Your message *</label>
+            <textarea class="form-control" placeholder="Write message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom: 18px;">
+          <h3 style="margin-bottom: 15px;">CONTACT DETAILS</h3>
+          <p style="margin-bottom: 10px;"><strong>Phone:</strong><br><span style="color: #6b7280;">+232 789 08456</span></p>
+          <p style="margin-bottom: 10px;"><strong>Email:</strong><br><span style="color: #6b7280;">info@salonekitchen.sl</span></p>
+          <p style="margin-bottom: 10px;"><strong>Address:</strong><br><span style="color: #6b7280;">36 Siaka Stevens Street, Freetown</span></p>
+          <p><strong>Days and Hours:</strong><br><span style="color: #6b7280;">Mon - Sat: 8:00 AM - 8:00 PM</span></p>
+        </div>
+
+        <div class="card" style="background: #f9fafb;">
+          <p style="font-size: 0.88rem; color: #6b7280;">Need instant support? Call our customer line directly.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-banner">CONTACT INFORMATION</div>
+    <div class="card"><p style="color: #6b7280;">Phone: +232 789 08456 | Email: info@salonekitchen.sl</p></div>
+
+    <div class="section-banner">BUSINESS HOURS</div>
+    <div class="card"><p style="color: #6b7280;">Monday–Saturday: 8:00 AM–8:00 PM. Hours may vary on holidays.</p></div>
+
+    <div class="section-banner">FREQUENT QUESTIONS</div>
+    <div class="card"><p style="color: #6b7280;">Find quick answers regarding delivery zones, event catering, or payment options.</p></div>
+  </div>
+
+  <footer>
+    <div><strong>SALONE KITCHEN</strong> | Phone: +232 789 08456 | Email: info@salonekitchen.sl</div>
+    <div><span>Social Links</span></div>
+  </footer>
+</body>
+</html>

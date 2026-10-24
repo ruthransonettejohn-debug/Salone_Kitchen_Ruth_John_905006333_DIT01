@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALONE KITCHEN - Menu</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+    body { background-color: #f8fafc; color: #1f2937; line-height: 1.6; padding-top: 85px; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 20px; }
+    header { position: fixed; top: 0; left: 0; right: 0; height: 75px; background-color: #111827; color: #ffffff; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .brand-logo { font-size: 1.3rem; font-weight: 800; letter-spacing: 1.5px; color: #ffffff; }
+    .nav-links { display: flex; gap: 12px; align-items: center; list-style: none; }
+    .nav-links a { font-size: 0.85rem; font-weight: 600; padding: 8px 14px; border-radius: 4px; color: #d1d5db; text-transform: uppercase; }
+    .nav-links a:hover, .nav-links a.active { color: #ffffff; background-color: #059669; }
+    .section-banner { background: #f3f4f6; color: #111827; border: 1px solid #e5e7eb; padding: 14px 20px; margin: 25px 0 18px 0; border-radius: 6px; font-size: 1.05rem; font-weight: 700; text-transform: uppercase; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 20px; }
+    .card { background-color: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #e5e7eb; }
+    .img-container { width: 100%; aspect-ratio: 16/10; background: #e5e7eb; border-radius: 6px; overflow: hidden; margin-bottom: 12px; }
+    .img-container img { width: 100%; height: 100%; object-fit: cover; }
+    .btn-primary { display: inline-block; background-color: #111827; color: white; padding: 7px 14px; border-radius: 4px; font-weight: 700; font-size: 0.8rem; cursor: pointer; }
+    .btn-primary:hover { background-color: #059669; }
+    footer { background-color: #111827; color: #9ca3af; padding: 25px 5%; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; border-top: 3px solid #059669; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION INSERTED -->
+  <header>
+    <div class="brand-logo">SALONE KITCHEN</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section-banner">OUR MENU</div>
+    <p style="color: #6b7280; margin-bottom: 20px;">Browse categories and choose the meals you like.</p>
+
+    <div style="display: flex; gap: 8px; margin-bottom: 25px; flex-wrap: wrap;">
+      <button class="btn-primary" style="background: #059669;">ALL ITEMS</button>
+      <button class="btn-primary">MEALS</button>
+      <button class="btn-primary">SIDES</button>
+      <button class="btn-primary">DRINKS</button>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=500&q=80" alt="Pizaa"></div>
+        <h4>ITEM 01 - Pizza</h4>
+        <p style="color: #6b7280; font-size: 0.85rem; margin: 4px 0 12px;">PIZZA.</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <strong style="color: #d97706;">Le 45,000</strong>
+          <a href="order.html" class="btn-primary">Order Item</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=500&q=80" alt="Jollof Rice"></div>
+        <h4>ITEM 02 - Jollof</h4>
+        <p style="color: #6b7280; font-size: 0.85rem; margin: 4px 0 12px;">Rich tomato rice served with fried chicken and plantain.</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <strong style="color: #d97706;">Le 40,000</strong>
+          <a href="order.html" class="btn-primary">Order Item</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500&q=80" alt="Vegetable salad"></div>
+        <h4>ITEM 03 - Vegetable salad</h4>
+        <p style="color: #6b7280; font-size: 0.85rem; margin: 4px 0 12px;">Vegetable salad
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <strong style="color: #d97706;">Le 45,000</strong>
+          <a href="order.html" class="btn-primary">Order Item</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=500&q=80" alt="Vegetable Pizza"></div>
+        <h4>ITEM 04 - Vegetable Pizza</h4>
+        <p style="color: #6b7280; font-size: 0.85rem; margin: 4px 0 12px;">Vegetable Pizza
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <strong style="color: #d97706;">Le 35,000</strong>
+          <a href="order.html" class="btn-primary">Order Item</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=500&q=80" alt="Fried Fish"></div>
+        <h4>ITEM 05 - Dodo & Fried Fish</h4>
+        <p style="color: #6b7280; font-size: 0.85rem; margin: 4px 0 12px;">Fried rice
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <strong style="color: #d97706;">Le 30,000</strong>
+          <a href="order.html" class="btn-primary">Order Item</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Ginger Juice"></div>
+        <h4>ITEM 06 - Fresh Ginger Juice</h4>
+        <p style="color: #6b7280; font-size: 0.85rem; margin: 4px 0 12px;">Chilled local ginger beer drink made with pineapple juice and cloves.</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <strong style="color: #d97706;">Le 15,000</strong>
+          <a href="order.html" class="btn-primary">Order Item</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-banner">LOCAL FAVOURITES</div>
+    <div class="card"><p style="color: #6b7280;">Discover popular items chosen by locals both near and far.</p></div>
+
+    <div class="section-banner">MEALS AND SIDES</div>
+    <div class="card"><p style="color: #6b7280;">Choose from main dishes, snack sides, and refreshing drinks.</p></div>
+
+    <div class="section-banner">YOUR ORDER SUMMARY</div>
+    <div class="card"><p style="color: #6b7280;">Review your selected items before proceeding to checkout.</p></div>
+  </div>
+
+  <footer>
+    <div><strong>SALONE KITCHEN</strong> | Phone: +232 789 08456 | Email: info@salonekitchen.sl</div>
+    <div><span>Social Links</span></div>
+  </footer>
+</body>
+</html>

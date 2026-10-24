@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALONE KITCHEN - Services</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+    body { background-color: #f8fafc; color: #1f2937; line-height: 1.6; padding-top: 85px; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 20px; }
+    header { position: fixed; top: 0; left: 0; right: 0; height: 75px; background-color: #111827; color: #ffffff; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .brand-logo { font-size: 1.3rem; font-weight: 800; letter-spacing: 1.5px; color: #ffffff; }
+    .nav-links { display: flex; gap: 12px; align-items: center; list-style: none; }
+    .nav-links a { font-size: 0.85rem; font-weight: 600; padding: 8px 14px; border-radius: 4px; color: #d1d5db; text-transform: uppercase; }
+    .nav-links a:hover, .nav-links a.active { color: #ffffff; background-color: #059669; }
+    .section-banner { background: #f3f4f6; color: #111827; border: 1px solid #e5e7eb; padding: 14px 20px; margin: 25px 0 18px 0; border-radius: 6px; font-size: 1.05rem; font-weight: 700; text-transform: uppercase; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 20px; }
+    .card { background-color: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #e5e7eb; }
+    .img-container { width: 100%; aspect-ratio: 16/10; background: #e5e7eb; border-radius: 6px; overflow: hidden; margin-bottom: 12px; }
+    .img-container img { width: 100%; height: 100%; object-fit: cover; }
+    .btn-primary { display: inline-block; background-color: #111827; color: white; padding: 8px 18px; border-radius: 4px; font-weight: 700; font-size: 0.85rem; cursor: pointer; }
+    .btn-primary:hover { background-color: #059669; }
+    footer { background-color: #111827; color: #9ca3af; padding: 25px 5%; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; border-top: 3px solid #059669; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION INSERTED -->
+  <header>
+    <div class="brand-logo">SALONE KITCHEN</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section-banner">OUR SERVICES</div>
+    <p style="color: #6b7280; margin-bottom: 20px;">Explain the ways we can help and how each service works.</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 12px;">
+          <div class="img-container" style="width: 70px; height: 70px; margin-bottom: 0; min-width: 70px;">
+            <img src="https://images.unsplash.com/photo-1526367460882-1cd316335a4f?auto=format&fit=crop&w=200&q=80" alt="Delivery">
+          </div>
+          <div>
+            <h4>SERVICE 01 - Food Delivery</h4>
+            <p style="color: #6b7280; font-size: 0.85rem;">Fast delivery of hot meals right to your doorstep across Freetown.</p>
+          </div>
+        </div>
+        <a href="contact.html" class="btn-primary">Learn More</a>
+      </div>
+
+      <div class="card">
+        <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 12px;">
+          <div class="img-container" style="width: 70px; height: 70px; margin-bottom: 0; min-width: 70px;">
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=200&q=80" alt="Pickup">
+          </div>
+          <div>
+            <h4>SERVICE 02 - Takeaway Pickup</h4>
+            <p style="color: #6b7280; font-size: 0.85rem;">Order ahead and collect your food without waiting in line.</p>
+          </div>
+        </div>
+        <a href="contact.html" class="btn-primary">Learn More</a>
+      </div>
+
+      <div class="card">
+        <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 12px;">
+          <div class="img-container" style="width: 70px; height: 70px; margin-bottom: 0; min-width: 70px;">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=200&q=80" alt="Catering">
+          </div>
+          <div>
+            <h4>SERVICE 03 - Event Catering</h4>
+            <p style="color: #6b7280; font-size: 0.85rem;">Full-service local catering for weddings, parties, and meetings.</p>
+          </div>
+        </div>
+        <a href="contact.html" class="btn-primary">Learn More</a>
+      </div>
+
+      <div class="card">
+        <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 12px;">
+          <div class="img-container" style="width: 70px; height: 70px; margin-bottom: 0; min-width: 70px;">
+            <img src="https://images.unsplash.com/photo-1556742049-0a67d553c253?auto=format&fit=crop&w=200&q=80" alt="Bulk Orders">
+          </div>
+          <div>
+            <h4>SERVICE 04 - Bulk Orders</h4>
+            <p style="color: #6b7280; font-size: 0.85rem;">Large quantity meals prepared for offices and institutional events.</p>
+          </div>
+        </div>
+        <a href="contact.html" class="btn-primary">Learn More</a>
+      </div>
+    </div>
+
+    <div class="section-banner">NEED HELP CUSTOMER? Contact our team for more information.</div>
+
+    <div class="section-banner">FOOD DELIVERY</div>
+    <div class="card"><p style="color: #6b7280;">Have your meals delivered to your doorstep quickly and reliably.</p></div>
+
+    <div class="section-banner">PICKUP ORDERS</div>
+    <div class="card"><p style="color: #6b7280;">Place your order ahead and collect it when it is ready.</p></div>
+
+    <div class="section-banner">CUSTOMER SUPPORT</div>
+    <div class="card"><p style="color: #6b7280;">Contact our team for help with any order inquiries.</p></div>
+  </div>
+
+  <footer>
+    <div><strong>SALONE KITCHEN</strong> | Phone: +232 789 08456 | Email: info@salonekitchen.sl</div>
+    <div><span>Social Links</span></div>
+  </footer>
+</body>
+</html>
