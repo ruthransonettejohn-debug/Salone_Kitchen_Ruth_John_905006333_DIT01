@@ -31,3 +31,23 @@ Salone Kitchen — Authentic Sierra Leonean Culinary Experience
 ​Languages: HTML5, CSS3.
 ​Styling Theme: Warm, inviting culinary tones (Warm Amber, Deep Orange, Earthy Browns, and Clean Ivory/White).
 
+## Salone_Kitchen Website Screenshots
+
+### 1. Home Page
+![Salone_Kitchen Home Page](screenshots/Home.jpeg)
+
+### 2. Menu Page
+![Salone_Kitchen Menu Page](screenshots/Menu.jpeg)
+
+### 3. About Page
+![Salone_Kitchen About Page](screenshots/About.jpeg)
+
+### 4. Services Page
+![Salone_Kitchen Services Page](screenshots/services.jpeg)
+
+### 5. Order Page
+![Salone_Kitchen Order Page](screenshots/Order.jpeg)
+
+### 6. Contact Page
+![Salone_Kitchen Contact Page](screenshots/Contact.jpeg)
+
