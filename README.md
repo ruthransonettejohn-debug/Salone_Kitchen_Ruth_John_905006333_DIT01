@@ -46,8 +46,8 @@ Salone Kitchen — Authentic Sierra Leonean Culinary Experience
 ![Salone_Kitchen Services Page](screenshots/services.jpeg)
 
 ### 5. Order Page
-![Salone_Kitchen Order Page](screenshots/Order.jpeg)
+![Salone_Kitchen Order Page](screenshots/order.jpeg)
 
 ### 6. Contact Page
-![Salone_Kitchen Contact Page](screenshots/Contact.jpeg)
+![Salone_Kitchen Contact Page](screenshots/contact.jpeg)
 
